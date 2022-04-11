@@ -687,7 +687,6 @@ h2 {
 }
 }
 
-
 @media screen and (min-width: 960px) and (max-width: 1199px) {
 .tech-in-extension .container {
     padding: 56px 40px;
@@ -736,7 +735,87 @@ h2 {
 
 
 /* Стили для блока How it works */
+.how .container {
+    background: rgba(102, 107, 235, 0.08);
+    border-radius: 23px;
+    margin: 25px auto;
+    padding: 56px;
+}
+.how .content {
+    margin-top: 22px;
+    display: flex;
+}
+.how h2 {
+    text-align: center;
+}
+.how h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: var(--purple);
+    margin-bottom: 20px;
+}
+.how p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--darkText);
+}
+.how .left-col {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.nav-arrows a:nth-child(1) {
+    margin-right: 28px;
+}
 
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+.how .left-col {
+    width: 40%;
+}
+.how .right-col {
+    width: 60%;
+}
+.how .right-col img {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 959px) {
+.how .content {
+    flex-direction: column-reverse;
+    margin-top: 16px;
+}
+.how .right-col img {
+    width: 106%;
+    margin-left: -3%;
+}
+.how .left-col {
+    justify-content: center;
+    text-align: center;
+    margin-top: 14px;
+}
+.nav-arrows {
+    margin-top: 26px;
+}
+.how .container {
+    padding: 46px 56px 56px;
+}
+}
+
+@media screen and (max-width: 479px) {
+.how .container {
+    padding: 28px 34px 34px;
+}
+.how .content {
+    margin-top: 0;
+}
+.how h3 {
+    font-size: 24px;
+    line-height: 20px;
+}
+}
 
 
 /* Стили для блока AI recruiting technologies that builds winning teams */
